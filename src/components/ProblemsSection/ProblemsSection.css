@@ -1,0 +1,134 @@
+.problems-section {
+    background-color: #f9f9f9; 
+    padding: 80px 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #1a1a1a;
+}
+
+.problems-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.problems-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
+}
+
+.title-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.blue-line {
+    width: 60px;
+    height: 4px;
+    background-color: #4A90E2; 
+    margin-bottom: 15px;
+}
+
+.title-block h2 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.header-description {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.header-description p {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: right;
+  color: #4b4b4b;
+}
+
+.header-description .highlight-text {
+    margin-top: 15px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 40px;
+}
+
+.problem-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.image-wrapper {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 220px; 
+    object-fit: cover;
+    display: block;
+}
+
+.problem-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.problem-card p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+}
+
+@media (max-width: 992px) {
+    .problems-header {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .header-description {
+        text-align: left;
+        max-width: 100%;
+    }
+
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .problems-section {
+        padding: 50px 0;
+    }
+
+    .title-block h2 {
+        font-size: 32px;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr; 
+        gap: 50px;
+    }
+
+    .image-wrapper img {
+        height: auto; 
+        max-height: 250px;
+    }
+}

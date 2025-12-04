@@ -1,0 +1,117 @@
+.approach-section {
+    background-color: #ffffff;
+    padding: 100px 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #1a1a1a;
+    width: 100%;
+}
+
+.approach-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 60px; 
+}
+
+.approach-text-content {
+    flex: 1; 
+    max-width: 500px;
+}
+
+.approach-text-content h2 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+}
+
+.approach-description p {
+    font-size: 16px;
+    line-height: 1.8; 
+    color: #999999; 
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.approach-btn {
+    padding: 0 30px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    background: linear-gradient(127deg, #399fd8 0%, #0a72ad 100%);
+    box-shadow: 0 5px 15px rgba(10, 114, 173, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.approach-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(10, 114, 173, 0.4);
+}
+
+.approach-image-block {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; 
+    box-shadow: 0 5px 8px 0 rgba(151, 151, 151, 0.12);
+}
+
+.approach-image-block img {
+   width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 992px) {
+    .approach-container {
+        flex-direction: column;
+        text-align: center; 
+        gap: 40px;
+    }
+
+    .approach-text-content {
+        max-width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .approach-image-block {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .approach-image-block img {
+        max-width: 80%; 
+    }
+}
+
+@media (max-width: 576px) {
+    .approach-section {
+        padding: 60px 0;
+    }
+
+    .approach-text-content h2 {
+        font-size: 32px;
+    }
+
+    .approach-description p {
+        font-size: 14px;
+    }
+
+    .approach-image-block img {
+        max-width: 100%;
+    }
+    
+    .approach-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}

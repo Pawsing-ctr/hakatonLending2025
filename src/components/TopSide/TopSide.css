@@ -1,0 +1,313 @@
+
+.hero-section {
+    display: flex;
+    min-height: 100vh;
+    background-color: #1a1a1a;
+    position: relative;
+    overflow: hidden; 
+}
+
+.content-container {
+    flex: 1;
+    max-width: 50%; 
+    padding: 40px 80px 40px 100px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+  color: #0a72ad;
+  margin-bottom: 40px;
+}
+
+.text-content {
+   flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px; 
+    margin-top: 40px;
+}
+
+.text-content h1 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+.subtitle strong {
+    font-weight: 700;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #bdbdbd;
+}
+
+.cta-button {
+    padding: 10px 21px;
+    max-width: 200px;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 5px 8px 0 rgba(1, 115, 153, 0.2);
+    background: linear-gradient(127deg, #60bbee 0%, #0a72ad 100%);
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border: none;
+}
+
+.cta-button:hover{
+  transform: scale(1.1);
+}
+
+.stats-block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 20px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 30%;
+}
+
+.stat-item .value {
+  font-weight: 700;
+  font-size: 50px;
+  color: #fff;
+}
+
+.stat-item .label {
+font-weight: 600;
+font-size: 14px;
+color: #c4c4c4;
+}
+
+.plus-text {
+  font-size: 50px;
+  color: #2387c0;
+  font-weight: 700;
+}
+
+.visual-and-mission-block {
+    flex: 1;
+    max-width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 100vh;
+    z-index: 0; 
+}
+
+.visual-and-mission-block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; 
+
+ background-image: 
+        linear-gradient(to right, 
+            #1a1a1a 0%, 
+            #1a1a1a 25%, 
+            rgba(26, 26, 26, 0) 40%,
+            transparent 100%
+        ),
+        url('/public/TopSideBuilding.png');
+        
+          background-size: auto 100%; 
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+
+.mission-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px 30px 100px; 
+    position: relative;
+    z-index: 2; 
+    box-shadow: 0 5px 8px 0 rgba(1, 115, 153, 0.2);
+    background: linear-gradient(127deg, #399fd8 0%, #0775b4 30.37%, #003756 99.44%);
+}
+ 
+
+.mission-block p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.mission-logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.text-side-block{
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  width: 100%;
+  gap: 15px;
+}
+
+
+@media (max-width: 1200px) {
+    .content-container {
+        padding: 30px 40px 30px 60px;
+    }
+    .text-content h1 {
+        font-size: 30px;
+    }
+    .subtitle {
+        font-size: 20px;
+    }
+    .mission-block {
+        padding: 25px 30px 25px 60px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-section {
+        flex-direction: column; 
+    }
+
+    .content-container,
+    .visual-and-mission-block {
+        max-width: 100%;
+        flex: none;
+    }
+
+    .content-container {
+        padding: 40px;
+        min-height: auto;
+    }
+
+    .text-content {
+        justify-content: flex-start;
+        padding-bottom: 20px;
+    }
+
+    .visual-and-mission-block::before{
+        display: none;
+    }
+
+    .visual-and-mission-block {
+        min-height: 450px; 
+    }
+
+    .mission-block {
+        justify-content: center; 
+        padding: 20px 40px;
+        flex-direction: column; 
+        text-align: center;
+    }
+    
+    .mission-logo {
+        margin-right: 0;
+        margin-bottom: 15px; 
+    }
+    
+    .text-side-block {
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .content-container {
+        padding: 20px;
+    }
+
+    .logo {
+        margin-bottom: 30px;
+    }
+
+    .text-content h1 {
+        font-size: 26px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .description {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .cta-button {
+        padding: 12px 30px;
+        margin-bottom: 40px;
+    }
+
+    .stats-block {
+        flex-direction: column; 
+        gap: 20px;
+    }
+
+    .stat-item {
+        max-width: 100%;
+    }
+
+ .stat-item .value {
+        font-size: 32px; 
+    }
+
+    .visual-and-mission-block {
+        min-height: 300px;
+    }
+    
+    .stats-block {
+        flex-direction: column; 
+        gap: 20px;
+        max-width: 100%; 
+        align-items: flex-start;
+    }
+
+    .plus-text {
+        font-size: 32px; 
+    }
+    
+    .stat-item .label {
+        font-size: 12px;
+    }
+
+    .stats-block {
+        flex-direction: column; 
+        gap: 20px;
+        max-width: 100%; 
+        align-items: flex-start;
+    }
+    
+    .mission-logo {
+        font-size: 18px;
+    }
+    
+    .text-side-block p {
+        font-size: 12px;
+    }
+}
