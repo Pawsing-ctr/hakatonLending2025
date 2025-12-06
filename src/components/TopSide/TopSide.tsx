@@ -19,7 +19,7 @@ const TopSide = () => {
               Telegram-боте.
             </p>
 
-            <button className="cta-button">Узнайте больше</button>
+            <button className="cta-button">Узнать больше</button>
           </div>
           <div className="stats-block">
             <div className="stat-item">

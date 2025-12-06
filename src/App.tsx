@@ -8,10 +8,18 @@ import WhyUsSection from "./components/WhyUsSection/WhyUsSection";
 function App() {
   return (
     <div>
-      <TopSide />
-      <ProblemsSection />
-      <WhyUsSection />
-      <ApproachSection />
+      <section id="main">
+        <TopSide />
+      </section>
+      <section id="problems">
+        <ProblemsSection />
+      </section>
+      <section id="why-us">
+        <WhyUsSection />
+      </section>
+      <section id="approach">
+        <ApproachSection />
+      </section>
       <Footer />
     </div>
   );

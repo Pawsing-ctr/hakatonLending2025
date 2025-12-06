@@ -6,9 +6,7 @@ const ApproachSection = () => {
       <div className="approach-container">
         {/* Левая часть: Текст */}
         <div className="approach-text-content">
-          <h2>
-            Наш Подход <br /> К Обедам
-          </h2>
+          <h2>Наш Подход К Обедам</h2>
 
           <div className="approach-description">
             <p>
@@ -19,7 +17,14 @@ const ApproachSection = () => {
             </p>
           </div>
 
-          <button className="approach-btn">Начать!</button>
+          <button
+            onClick={() =>
+              (window.location.href = "https://t.me/QuickL4nch_Bot")
+            }
+            className="approach-btn"
+          >
+            Начать!
+          </button>
         </div>
 
         {/* Правая часть: Картинка */}
