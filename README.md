@@ -1,73 +1,51 @@
-# React + TypeScript + Vite
+# 🎬 QuickLunch Frontend  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![QuickLunch](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWpkNGljZTFzMms5ZDc4djN2bTkyMG95ZndtaWt2d3lseDZydjVhaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hVP3ippY6MdtJ2Yd3X/giphy.gif)  
 
-Currently, two official plugins are available:
+**QuickLunch** это стильный и интуитивно понятный лендинг-пейдж, служащий витриной для нашего Telegram-бота **OfficeLunch Bot**. Он разработан для того, чтобы максимально упростить и ускорить процесс адаптации пользователей, а также обеспечить легкий доступ к системе корпоративного питания.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo  
+🔗 [QuickLunch (Live)](https://hakaton-lending2025.vercel.app/)  
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📌 Cтек 
+- ⚛️ **React + Vite** – Современный и производительный фреймворк для разработки интерфейса.
+- 💻 **TypeScript (Опционально, но рекомендуется)** – Для повышения надёжности и безопасности кода.
+- 🏗 **Vercel** – Платформа для быстрого и удобного деплоя.  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📖 Установка и Запуск
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 1️⃣ Клонирование репозитория
+```bash
+git clone https://github.com/Pawsing-ctr/hakatonLending2025.git
+cd hakatonLending2025
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 2️⃣ Установка зависимостей
+```bash
+npm install
 ```
+
+### 3️⃣ Запуск сервера разработки
+```bash
+npm run dev
+```
+
+### Приложение будет доступно по адресу:
+🔗 http://localhost:5173
+
+---
+### 📢 Контакты 
+
+```bash
+👤 Author: Pawsing-ctr & K-Word & rvchk
+📧 Email: kimerland.project@gmail.com
+🐙 GitHub: K-Word & Pawsing-ctr & rvchk
+```
+
+---
+
+### ⭐️ Если вам понравился наш проект, пожалуйста, поставьте ему звезду!
