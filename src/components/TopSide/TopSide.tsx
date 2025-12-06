@@ -19,7 +19,12 @@ const TopSide = () => {
               Telegram-боте.
             </p>
 
-            <button className="cta-button">Узнать больше</button>
+            <button
+              onClick={() => (window.location.href = "#functional")}
+              className="cta-button"
+            >
+              Узнать больше
+            </button>
           </div>
           <div className="stats-block">
             <div className="stat-item">

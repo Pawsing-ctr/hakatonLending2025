@@ -4,7 +4,6 @@ const ApproachSection = () => {
   return (
     <section className="approach-section">
       <div className="approach-container">
-        {/* Левая часть: Текст */}
         <div className="approach-text-content">
           <h2>Наш Подход К Обедам</h2>
 
@@ -27,9 +26,7 @@ const ApproachSection = () => {
           </button>
         </div>
 
-        {/* Правая часть: Картинка */}
         <div className="approach-image-block">
-          {/* ЗАМЕНИТЕ ПУТЬ на реальный файл картинки (человек у доски) */}
           <img
             src="/HumanAroundBord.png"
             alt="Наш подход к организации обедов"
