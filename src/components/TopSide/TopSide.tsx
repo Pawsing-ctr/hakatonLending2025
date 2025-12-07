@@ -18,7 +18,7 @@ const TopSide = () => {
               <br /> Обеды в офисе без хаоса: все заказы — в одном
               Telegram-боте.
             </p>
-            <a href="https://t.me/QuickL4nch_Bot">
+            <a href="https://t.me/quicktest2025max_bot">
               <button className="cta-button">Заказать!</button>
             </a>
           </div>

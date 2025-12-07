@@ -120,7 +120,7 @@ const FunctionalSection = () => {
               <div className="total-label">
                 Итого: <span className="total-value">{totalPrice} ₽</span>
               </div>
-              <a href="https://t.me/QuickL4nch_Bot">
+              <a href="https://t.me/quicktest2025max_bot">
                 <button className="demo-btn finish-btn">Заказать!</button>
               </a>
             </div>

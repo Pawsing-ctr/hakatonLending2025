@@ -127,11 +127,24 @@
         grid-template-columns: 1fr; 
         gap: 50px;
     }
+    
+    .image-wrapper{
+        max-width: 500px;
+    }
 
     .image-wrapper img {
         height: auto; 
         max-height: 250px;
+        max-width: 500px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
+
+    .link-divider{
+        display: none;
+    }
+
    .problems-header{
     align-items: center;
    }

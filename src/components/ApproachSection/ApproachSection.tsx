@@ -16,7 +16,7 @@ const ApproachSection = () => {
             </p>
           </div>
 
-          <a href="https://t.me/QuickL4nch_Bot">
+          <a href="https://t.me/quicktest2025max_bot">
             <button className="approach-btn">Заказать!</button>
           </a>
         </div>
