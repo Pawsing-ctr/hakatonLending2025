@@ -16,14 +16,9 @@ const ApproachSection = () => {
             </p>
           </div>
 
-          <button
-            onClick={() =>
-              (window.location.href = "https://t.me/QuickL4nch_Bot")
-            }
-            className="approach-btn"
-          >
-            Начать!
-          </button>
+          <a href="https://t.me/QuickL4nch_Bot">
+            <button className="approach-btn">Заказать!</button>
+          </a>
         </div>
 
         <div className="approach-image-block">

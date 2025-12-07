@@ -119,6 +119,7 @@
     }
 
     .title-block h2 {
+        text-align: center;
         font-size: 32px;
     }
 
@@ -131,4 +132,10 @@
         height: auto; 
         max-height: 250px;
     }
+   .problems-header{
+    align-items: center;
+   }
+   .header-description p {
+    text-align: center;
+   }
 }

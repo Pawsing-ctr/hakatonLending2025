@@ -18,13 +18,9 @@ const TopSide = () => {
               <br /> Обеды в офисе без хаоса: все заказы — в одном
               Telegram-боте.
             </p>
-
-            <button
-              onClick={() => (window.location.href = "#functional")}
-              className="cta-button"
-            >
-              Узнать больше
-            </button>
+            <a href="https://t.me/QuickL4nch_Bot">
+              <button className="cta-button">Заказать!</button>
+            </a>
           </div>
           <div className="stats-block">
             <div className="stat-item">

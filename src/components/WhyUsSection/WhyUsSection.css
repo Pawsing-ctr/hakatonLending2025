@@ -123,6 +123,15 @@
     }
 }
 
+@media (max-width: 800px) {
+       .why-us-header{
+        align-items: center;
+    }
+    .header-text p {
+        text-align: center;
+    }
+}
+
 @media (max-width: 576px) {
     .why-us-section {
         padding: 60px 0;
@@ -143,5 +152,8 @@
 
     .feature-item h3 {
         padding: 0 10px; 
+    }
+       .why-us-header{
+        align-items: center;
     }
 }

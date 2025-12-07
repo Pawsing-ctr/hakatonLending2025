@@ -88,10 +88,11 @@ const FunctionalSection = () => {
             ))}
           </div>
           <div className="text-side">
-            <h3>2. Выберите любимый ресторан</h3>
+            <h3>2. Выберите ваш офис!</h3>
             <p>
-              Мы работаем с лучшими заведениями города. Весь ассортимент
-              доступен в едином интерфейсе без лишних переходов.
+              Система автоматически предложит вам список доступных офисов.
+              Выберите тот, для которого вы сейчас оформляете заказ, чтобы
+              получить актуальное меню и настроенный способ оплаты.
             </p>
           </div>
         </div>
@@ -119,14 +120,9 @@ const FunctionalSection = () => {
               <div className="total-label">
                 Итого: <span className="total-value">{totalPrice} ₽</span>
               </div>
-              <button
-                onClick={() =>
-                  (window.location.href = "https://t.me/QuickL4nch_Bot")
-                }
-                className="demo-btn finish-btn"
-              >
-                Заказать
-              </button>
+              <a href="https://t.me/QuickL4nch_Bot">
+                <button className="demo-btn finish-btn">Заказать!</button>
+              </a>
             </div>
           </div>
           <div className="text-side">
